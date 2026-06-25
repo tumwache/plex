@@ -1,6 +1,6 @@
 # plex with linux
 
-how to install plex media sever to access local content on your favourite screen size, lol, right?
+how to install plex media sever to access local content on your favourite screen size, lol, right?  
 aaanyywaayy...
 
 ## Prerequisites
@@ -35,11 +35,12 @@ my username is `userb`
 if using ufw, to allow the server to stream content and talk to your devices
 
 1. `ufw allow 32400/tcp` - to open its primary web server port
-2. `ufw allow 1900/udp` - allows Plex to stream media to older smart TVs, game consoles, and legacy media players that do not have an official Plex app
-3. `ufw allow 32410:32414/udp` - GDM Network Discovery on you plex client mobile app
-4. `ufw allow 3005/tcp` - the port allows you to control one Plex player from another device
-5. `ufw allow 8324/tcp` - roku control protocol
-6. `ufw allow 21/tcp` - for ftp transfers if copying 
+2. `ufw allow 1900/udp` - allows Plex to stream media to older smart TVs, game consoles,
+   and legacy media players that do not have an official Plex app
+4. `ufw allow 32410:32414/udp` - GDM Network Discovery on you plex client mobile app
+5. `ufw allow 3005/tcp` - the port allows you to control one Plex player from another device
+6. `ufw allow 8324/tcp` - roku control protocol
+7. `ufw allow 21/tcp` - for ftp transfers if copying 
   
 ## Step 4: Start plex server
 to test the effort, if you dared:
@@ -51,3 +52,9 @@ to test the effort, if you dared:
 - open plex from web (http://yourip:32400/web/)
 
 ## finally add files to the plex folder
+
+- go to settings
+- select Manage Libraries
+- click Add Library, choose your media type, and browse to the exact folder path you created
+
+# d for done!
